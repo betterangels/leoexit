@@ -37,17 +37,14 @@ layout: default
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="social-media-button">
-            <a href="https://twitter.com/PengBerlin" target="_blank"><span id="twitterBox" class="fa-stack social-box fa-lg" style="margin-top:-4px"><i id="faTwittertSquare" class="fa fa-circle fa-stack-2x social-outer"></i><i id="fatwitter" class="fa fa-twitter fa-stack-1x social-inner" title="twitter"></i></span></a>
+              {% include icon-twitter.html username=site.twitter_username %}
           </li>
           <li class="social-media-button">
-            <a href="https://www.facebook.com/pengcollective" target="_blank"><span id="facebookBox" class="fa-stack social-box fa-lg" style="margin-top:-4px"><i id="faFacebookSquare" class="fa fa-circle fa-stack-2x social-outer"></i><i id="faFacebook" class="fa fa-facebook fa-stack-1x social-inner" title="facebook"></i></span></a>
+              {% include icon-facebook.html username=site.facebook_page %}
           </li>
           <li>
-            <a href="https://www.pen.gg/support" target="_blank" class="nav-button donate-button">donate</a>
+            <a href="https://www.generosity.com/community-fundraising/buoy-empowering-community-based-crisis-response" target="_blank" class="nav-button donate-button">donate</a>
           </li>
-          <!--<li>
-            <a href="de" class="nav-button"><i class="fa fa-globe"></i> de</a>
-          </li>-->
         </ul>
       </div>
     </div>
@@ -62,8 +59,8 @@ layout: default
         <div class="landing-nav col-xs-12 col-md-7 col-md-offset-2" id="landing-nav">
           <ul>
             <li>
-              <a href="https://twitter.com/PengBerlin" target="_blank"><span id="twitterBox" class="fa-stack social-box fa-lg" style="margin-top:-4px"><i id="faTwittertSquare" class="fa fa-circle fa-stack-2x social-outer"></i><i id="fatwitter" class="fa fa-twitter fa-stack-1x social-inner" title="twitter"></i></span></a>
-              <a href="https://www.facebook.com/pengcollective" target="_blank"><span id="facebookBox" class="fa-stack social-box fa-lg" style="margin-top:-4px"><i id="faFacebookSquare" class="fa fa-circle fa-stack-2x social-outer"></i><i id="faFacebook" class="fa fa-facebook fa-stack-1x social-inner" title="facebook"></i></span></a>
+                {% include icon-twitter.html username=site.twitter_username %}
+                {% include icon-facebook.html username=site.facebook_page %}
             </li>
             <li>
               <a href="#ready" class="nav-button donate-button exit-button-top scroll"><i class="icon-cw"></i>&nbsp;exit now!</a>
@@ -441,7 +438,7 @@ layout: default
         <div class="col-xs-12 col-md-5">
           <h3>reach out to us</h3>
           <p>If you are thinking about leaving the intelligence community, reach out to us!</p>
-                        <p>We ask you to comply with a minimum of secure communications. You can contact us through PGP on: <br><br><i class="icon-mail"></i>&nbsp;<a href="mailto:exit@intelexit.org">exit@intelexit.org</a> (<a href="keys/exit@intelexit.org_0x282F5DCA_pub.asc" target="_blank">PGP key</a> ID: CD7C F92A A24C 961C BFF5 3194 CEC5 FB38 282F 5DCA)</p>
+                        <p>We ask you to comply with a minimum of secure communications. You can contact us through PGP on: <br><br><i class="icon-mail"></i>&nbsp;<a href="mailto:{{ site.email }}">{{ site.email }}</a> (<a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x6FAE063A2F942A02" target="_blank">PGP key</a> ID: <code>{{ site.pgp_key_fingerprint }}</code>)</p>
                         <p>Or via this Tor hidden service <a href="http://intelexi7yo7mj7j.onion" target="_blank">intelexi7yo7mj7j.onion</a> where you can anonymously submit your messages. You can only access this page through <a href="https://www.torproject.org/" target="_blank">Tor</a>.</p>
         </div>
         <div class="col-md-3 col-xs-12 col-sm-6">

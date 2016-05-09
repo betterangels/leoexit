@@ -7,13 +7,18 @@
 
 # Site settings
 title: LEOexit
-email: BetterAngels@riseup.net
 description: > # this means to ignore newlines until "baseurl:"
     LEOexit is an initiative that helps people leave the law enforcement and corrections industries
     and build a new life. It is civil society&rsquo;s response to the lack of oversight and undemocratic
     practices of law enforcement agencies and the prison industrial complex.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
+
+# Contact values.
+email: BetterAngels@riseup.net
+twitter_username: BetterAngelsCR
+facebook_page: BetterAngelsCollective
+pgp_key_fingerprint: "6121 4D68 E0E3 54AA DE65 3B15 6FAE 063A 2F94 2A02"
 
 # Build settings
 markdown: kramdown
