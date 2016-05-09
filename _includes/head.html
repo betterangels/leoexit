@@ -1,0 +1,43 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/android-chrome-192x192.png" sizes="192x192">
+  <meta name="msapplication-square70x70logo" content="img/smalltile.png" />
+  <meta name="msapplication-square150x150logo" content="img/mediumtile.png" />
+  <meta name="msapplication-wide310x150logo" content="img/widetile.png" />
+  <meta name="msapplication-square310x310logo" content="img/largetile.png" />
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="{{ "/leoexit.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ "/style.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ "/intelexit.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ "/assets/css/animate.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{{ "/mejs/mediaelementplayer.css" | prepend: site.baseurl }}" /></code>
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!--
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  -->
+</head>
